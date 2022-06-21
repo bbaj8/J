@@ -231,8 +231,8 @@ async def cbstop(_, query: CallbackQuery):
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
             await query.edit_message_text(" **تم إنهاء التشغيل بنجاح**", reply_markup=bcl)
-        except Exception as e:https://github.com/ERTWF/FJAQW
-            await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
+        except Exception as e:
+            await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
         await query.answer("لا يوجد اغنية بدردشه الصوتية", show_alert=True)
 
