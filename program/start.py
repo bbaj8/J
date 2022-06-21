@@ -52,37 +52,37 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""👋🏻 **اهلا عمري {message.from_user.mention()} !**\n
-🎗 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **انا بوت يمديني اشغل اغاني وفيديو في المكالمه المرئيه! 🥇︙**
+        f""" **اهلا عمري {message.from_user.mention()} !**\n
+ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **انا بوت يمديني اشغل اغاني وفيديو في المكالمه المرئيه! ︙**
 
-🥇︙ **لمعرفة اوامري ياغالي عليك الضغط على زر 🥇 اوامر التشغيل!**
+︙ **لمعرفة اوامري ياغالي عليك الضغط على زر  اوامر التشغيل!**
 
-🥇︙ **لمعرفة شلون تفعلني بكروبك اضعط على زر 🥇 تفعيل البوت!**
+︙ **لمعرفة شلون تفعلني بكروبك اضعط على زر  تفعيل البوت!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "☬ اضفني الى مجموعتك ☬",
+                        " اضفني الى مجموعتك ",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("👷‍♂ تفعيل البوت 👷‍♂", callback_data="cbhowtouse")],
+                [InlineKeyboardButton(" تفعيل البوت ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("🥇 اوامر التشغيل 🥇", callback_data="cbcmds"),
-                    InlineKeyboardButton("👨‍💻 مالك البوت 👨‍💻", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton(" اوامر التشغيل ", callback_data="cbcmds"),
+                    InlineKeyboardButton(" مالك البوت ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 كروب الدعم 🌐", url=f"https://t.me/{GROUP_SUPPORT}"
+                        " كروب الدعم ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🌐 قناة البوت 🌐", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        " قناة البوت ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "⃟𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐛𝐫𝐚⃟", url="https://t.me/VFF35"
+                        "سورس فريدوم", url="https://t.me/R125R"
                     )
                 ],
             ]
@@ -102,15 +102,15 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/VFF35"),
+                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/R125R"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/QABNADLIB"
+                    "مطور السورس", url=f"https://t.me/QQQLO"
                 ),
             ]
         ]
     )
 
-    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ أّلَبِوِتّ يِّعٌمَلَ بِشٍګلَ طّبِيِّعٌيِّ𖠀\nℹ️ حٌسأّبِ أّلَمَسأّعٌدِ أّلَخَأّصٌ بِيِّ: [{ALIVE_NAME}] \n\n**شٍګڒٍأّ لَأّضّأّفِّتّيِّ هِنِأّ لَتّشٍشٍغٌيِّلَ أّلَمَوِسيِّقِىّ عٌلَىّ أّلَمَحٌأّدِثّةّ أّلَصٌوِتّيِّةّ༗** 💖"
+    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nها \nشغال حبي: [{ALIVE_NAME}] \n\n**شكرا ضفتني لهنا** 💖"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -129,15 +129,15 @@ async def src(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/VFF35"),
+                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/QQQLO"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/QABNADLIB"
+                    "مطور السورس", url=f"https://t.me/R125R"
                 ),
             ]
         ]
     )
 
-    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🎶 هذا هو ميوزك كوبرا المجاني\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيديو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
+    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🎶 هذا هو ميوزك فريدوم\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيديو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
