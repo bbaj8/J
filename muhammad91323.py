@@ -8,7 +8,7 @@ async def start_bot():
     print("[INFO]: STARTING PYTGCALLS CLIENT")
     await call_py.start()
     await idle()
-    print("[INFO]: STOPPING BOT & USERBOT")
+    print("[INFO]: STOPPING BOT &")
     await bot.stop()
 
 loop = asyncio.get_event_loop()
